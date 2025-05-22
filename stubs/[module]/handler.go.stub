@@ -1,0 +1,32 @@
+package [module]
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+
+type Handler struct {
+	uc Usecase
+}
+
+func NewHandler(uc Usecase) *Handler {
+	return &Handler{uc}
+}
+
+func (h *Handler) Index(c *ginContext) {
+
+}
+
+func (h *Handler) Create(c *ginContext) {
+	
+}
+
+func (h *Handler) Update(c *ginContext) {
+
+}
+
+func (h *Handler) Delete(c *ginContext) {
+
+}

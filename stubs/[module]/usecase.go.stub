@@ -1,0 +1,23 @@
+package [module]
+
+import (
+	"errors"
+
+	"golang.org/x/crypto/bcrypt"
+	"gorm.io/gorm"
+)
+
+
+var (
+    ErrNotOk   = errors.New("err not ok")
+)
+
+type Usecase interface {}
+
+
+type usecase struct {}
+
+func NewUsecase() Usecase {
+    return &usecase{}
+}
+
